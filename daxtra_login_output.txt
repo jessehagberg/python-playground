@@ -1,0 +1,60 @@
+<html>
+<head>
+<link rel='stylesheet' href='http://xtr1.daxtra.com/bootstrap/css/bootstrap.css'/>
+<link rel='stylesheet' href='http://xtr1.daxtra.com/bootstrap/css/datepicker.css'/>
+<script type='text/javascript' src='http://xtr1.daxtra.com/bootstrap/js/jquery.js'></script>
+<script type='text/javascript' src='http://xtr1.daxtra.com/bootstrap/js/bootstrap.js'></script>
+<script type='text/javascript' src='http://xtr1.daxtra.com/bootstrap/js/bootstrap-datepicker.js'></script>
+
+
+</head>
+
+<body>
+
+<div class='navbar'>
+ <div class='navbar-inner'>
+   <div class='container'>
+     <ul class='nav nav-large' role="navigation">
+       <li><a href='action.pl?action=signin&default=signin'><button class='btn btn-large'><i class='icon-arrow-right'></i> Sign In </button></a></li>
+       <li><a href='action.pl?action=signin&default=signout'><button class='btn btn-large'><i class='icon-arrow-left'></i> Sign Out </button></a></li>
+       <li><a href='action.pl?action=register_guest&default=signin'><button class='btn btn-large'><i class='icon-user'></i> Register Guest </button></a></li>
+       <li><a href='register.pl?action=guest_out&default=signout'><button class='btn btn-large'><i class='icon-thumbs-up'></i> Sign Out Guest </button></a></li>
+</ul>
+<ul class='nav nav-large pull-right' role="navigation">
+       <li class='dropdown'><a href='#' role='button' data-toggle='dropdown' class='dropdown-toggle' id='admin1'><button class='btn btn-large'><i class='icon-align-justify'></i> Menu <b class='caret'></b></button></a>
+          <ul class='dropdown-menu' role='menu' aria-labelledby='admin1'>
+            <li role='presentation'><a href='register.pl?action=register'>Register a YubiKey</a></li>
+            <li role='presentation'><a href='register.pl?action=registerDevice'>Register a Smart Device</a></li>
+            <li role='presentation'><a href='register.pl?action=deregister'>Deregister a YubiKey</a></li>
+            <li role='presentation'><a href='action.pl?action=signother'>Sign in or out another Employee</a></li>
+            <li role='presentation'><a href='action.pl?action=verify&default=user_page'>Administer Holidays Etc.</a></li>
+            <li role='presentation'><a href='list-in.pl'>Show Employee Board</a></li>
+            <li role='presentation'><a href='sync_users.pl?action=refresh_users'>Refresh Users from Sugar</a></li>
+            <li role='presentation'><a href='daxtractor_request.pl?action=new_form'>Goto Daxtractor Report</a></li>
+<!--            <li role='presentation'><a href='action.pl?action=motd'>Manage the MOTD</a></li> -->
+          </ul>
+       </li>
+     </ul>
+   </div>
+  </div>
+</div>
+
+<div class='container-fluid' id='div-register'><br>
+<h3>System Message: Action Successful</h3>
+
+<p>Jesse Hagberg has performed signin at 2016-04-08 14:56:10</p>
+
+<h3>Daxtra's Message Of The Day</h3>
+<p>Ever forgotten your YubiKey?  Ever thought is would be great to use your phone instead?  Just click on "Register a Smart device" in the right hand menu and follow instructions....</p>
+
+
+<a target='_otrs' href='http://xtr1.daxtra.com/otrs/index.pl'><button class='btn btn-large'><i class='icon-list'></i> Go OTRS </button></a>
+<a target='_sugar' href='http://sugar.daxtra.com/'><button class='btn btn-large'><i class='icon-user'></i> Go Sugar </button></a>
+<a target='_wiki' href='http://wiki.daxtra.tv/JSPWiki/Wiki.jsp'><button class='btn btn-large'><i class='icon-heart'></i> Go Wiki </button></a>
+<a target='_planner' href='https://app.liquidplanner.com/login'><button class='btn btn-large'><i class='icon-tasks'></i> Go Planner </button></a>
+<a href='http://in.daxtra.com/list-in.pl'><button class='btn btn-large'><i class='icon-list-alt'></i> Who is In? </button></a>
+
+
+</div>
+
+</body>
